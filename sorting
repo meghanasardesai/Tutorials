@@ -1,0 +1,35 @@
+var findSmallest = function(u) {
+	var smallestPos = 0; 
+	var smallestValue = u[0]
+
+	for (var i = 0; i < u.length; i++) {
+
+		var currentValue = u[i]
+		if (currentValue<smallestValue) {
+
+			smallestValue = currentValue
+			smallestPos = i
+		}
+	}
+	return {
+		sVal:smallestValue,
+		sPos:smallestPos
+	}	
+
+
+}
+
+var sort = function(input) {
+
+	var modifiedArray = input.slice(0);
+	var s=[]
+	for (var i = 0; i < input.length; i++) {
+		var smallestDetails = findSmallest(modifiedArray)
+		s.push(smallestDetails.sVal)
+		modifiedArray.splice(smallestDetails.sPos,1)
+	};
+
+
+	return s
+
+}
