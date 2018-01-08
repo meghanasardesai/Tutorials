@@ -1,0 +1,62 @@
+Place 4 divs in horizontal order with a space of 20px in between them.
+Each div should have unique images as provided.
+All div should have the dimension of 300px/200px.
+Each div should have unique background colors and a padding of 5px on all sides.
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+            html, body {
+                height: 100%;
+                width: 100%;
+            }
+
+            div {
+                height: 200px;
+                width: 300px;
+                display: inline-block;
+                box-sizing: border-box;
+                padding: 5px;
+                margin-right: 20px;
+            }
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+
+            .img1{
+                background-color: red;
+            }
+            .img2{
+                background-color: yellow;
+            }
+            .img3{
+                background-color: green;
+            }
+            .img4{
+                background-color: blue;
+            }
+        </style>    
+    </head>
+    <body>
+        <div class="img1"> 
+                <img src="05-zoo-animals-lp_n-amer.jpg">
+                
+        </div>
+        <div class="img2">
+                <img src="animals_hero_panda.jpg">
+                
+        </div>
+        <div class="img3">
+                <img src="images.jpg">
+                
+        </div>
+        <div class="img4">
+                <img src="pexels-photo-145939.jpeg">
+                
+        </div>
+    </body>
+</html>
