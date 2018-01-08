@@ -1,0 +1,26 @@
+Position Google image vertically and horizontally at the centre of the page
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+            html, body {
+                height: 100%;
+                width: 100%;
+            }
+            div {
+                position: absolute;
+                left:50%;
+                top:50%;
+                margin-left:-272px;
+                margin-top:-92px;
+            }
+        </style>    
+    </head>
+    <body>
+        <div>
+            <img src="googlelogo_color_272x92dp.png">
+        </div>
+    </body>
+
+</html>
